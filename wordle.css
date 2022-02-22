@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    padding: 0px;
 }
 
 .keyboardLetterBox{
@@ -46,21 +46,14 @@ body{
     .keyboardLetterBox{
         height: 40px;
         width: 30px;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--btn-color);
-        color: var(--logo-color);
-        font-size: 60%;
+        font-size: 70%;
     }
     
     .keyboardLetterBoxBig{
         height: 40px;
         width: 45px;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--btn-color);
-        color: var(--logo-color);    
-        font-size: 60%;
+        font-size: 70%;
+    }
 }
 
 .correct{
