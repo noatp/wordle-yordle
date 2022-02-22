@@ -27,8 +27,9 @@ body{
     width: 45px;
     justify-content: center;
     align-items: center;
-    background-color: var(--btn-color) !important;
+    background-color: var(--btn-color);
     color: var(--logo-color);
+    padding: 0px;
 }
 
 .keyboardLetterBoxBig{
@@ -36,8 +37,30 @@ body{
     width: 70px;
     justify-content: center;
     align-items: center;
-    background-color: var(--btn-color) !important;
+    background-color: var(--btn-color);
     color: var(--logo-color);
+    padding: 0px;
+}
+
+@media (max-width: 496px) {
+    .keyboardLetterBox{
+        height: 40px;
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--btn-color);
+        color: var(--logo-color);
+        font-size: 60%;
+    }
+    
+    .keyboardLetterBoxBig{
+        height: 40px;
+        width: 45px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--btn-color);
+        color: var(--logo-color);    
+        font-size: 60%;
 }
 
 .correct{

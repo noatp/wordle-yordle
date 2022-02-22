@@ -66,6 +66,7 @@ function generateKeyboard(){
             }
             newButton.type = "button"
             newButton.textContent = buttonText;
+            newButton.id = buttonText;
             keyboardRowArray[i].append(newButton);
         }
     }
@@ -137,11 +138,16 @@ function checkGuess(){
     for (let i = 0; i < 5; i++){
         let box = document.getElementById("box" + (numberOfGuess * 5 + i));
         let boxCharacter = box.textContent;
+        let key = document.getElementById(boxCharacter);
+        console.log(key);
         if (boxCharacter == currentWord[i]){
             box.classList.add("correct");
+            key.classList.add("correct");
+            key.classList.remove("close");
         }
         else if (currentWord.indexOf(boxCharacter) > -1) {
             box.classList.add("close");
+            key.classList.add("close");
         }
         else {
             box.classList.add("wrong");
@@ -169,7 +175,7 @@ function checkGuess(){
         if (numberOfGuess >= 6){
             gameFinished = true;
         }
-        currentGuess = ""
+        currentGuess = "";
     }
 }
 
