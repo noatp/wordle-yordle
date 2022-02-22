@@ -1,3 +1,4 @@
+const fs = module.constructor._load('fs');
 const keyboardRow1 = document.getElementById("keyboardRow1");
 const keyboardRow2 = document.getElementById("keyboardRow2");
 const keyboardRow3 = document.getElementById("keyboardRow3");
@@ -100,6 +101,11 @@ function removeLetter(){
 }
 
 function getNewWord(){
+    console.log("HUH")
+    readFile('wordData.txt', function (err, data){
+        if (err) throw err;
+        console.log(data.toString);
+    })
     currentWord = wordArray[getRandomInt(0, wordArray.length)];
     console.log(currentWord);
 }
