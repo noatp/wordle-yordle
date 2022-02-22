@@ -1,0 +1,40 @@
+:root {
+    --correct-color: #81a684;
+    --close-color: #f2cc8f;
+    --wrong-color: #8d99ae;
+    --btn-color: #fff1e6;
+    --start-color: #81a684;
+    --logo-color: #fff1e6;
+    --background-color: #1C1C22;
+}
+
+body{
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.letterBox{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboardLetterBox{
+    height: 65px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--wrong-color) !important;
+    color: var(--btn-color);
+}
+
+.keyboardLetterBoxBig{
+    height: 65px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--wrong-color) !important;
+    color: var(--btn-color);
+}
+
