@@ -61,6 +61,7 @@ body{
         background-color: var(--btn-color);
         color: var(--logo-color);    
         font-size: 60%;
+    }
 }
 
 .correct{
