@@ -1,15 +1,16 @@
 :root {
-    --correct-color: #81a684;
-    --close-color: #f2cc8f;
-    --wrong-color: #8d99ae;
-    --btn-color: #fff1e6;
-    --start-color: #81a684;
-    --logo-color: #fff1e6;
-    --background-color: #1C1C22;
+    --correct-color: #638c54;
+    --close-color: #b49f4c;
+    --wrong-color: #3a3a3c;
+    --btn-color: #818384;
+    --logo-color: #fffcfe;
+    --background-color: #010101;
 }
 
 body{
     font-family: 'Roboto Serif', sans-serif;
+    background-color: var(--background-color);
+    color: var(--logo-color);
 }
 
 .letterBox{
@@ -18,6 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .keyboardLetterBox{
@@ -25,8 +27,8 @@ body{
     width: 45px;
     justify-content: center;
     align-items: center;
-    background-color: var(--wrong-color) !important;
-    color: var(--btn-color);
+    background-color: var(--btn-color) !important;
+    color: var(--logo-color);
 }
 
 .keyboardLetterBoxBig{
@@ -34,7 +36,19 @@ body{
     width: 70px;
     justify-content: center;
     align-items: center;
-    background-color: var(--wrong-color) !important;
-    color: var(--btn-color);
+    background-color: var(--btn-color) !important;
+    color: var(--logo-color);
+}
+
+.correct{
+    background-color: var(--correct-color);
+}
+
+.wrong{
+    background-color: var(--wrong-color);
+}
+
+.close{
+    background-color: var(--close-color);
 }
 
