@@ -29,7 +29,6 @@ body{
     align-items: center;
     background-color: var(--btn-color);
     color: var(--logo-color);
-    padding: 0px;
 }
 
 .keyboardLetterBoxBig{
@@ -39,7 +38,6 @@ body{
     align-items: center;
     background-color: var(--btn-color);
     color: var(--logo-color);
-    padding: 0px;
 }
 
 @media (max-width: 496px) {
