@@ -131,6 +131,7 @@ function checkGuess(){
     }
     if (!wordArray.includes(currentGuess.toLowerCase())){
         console.log("not a valid word")
+        currentGuess = "";
         return;
     }
 
@@ -139,7 +140,7 @@ function checkGuess(){
         let box = document.getElementById("box" + (numberOfGuess * 5 + i));
         let boxCharacter = box.textContent;
         let key = document.getElementById(boxCharacter);
-        console.log(key);
+
         if (boxCharacter == currentWord[i]){
             box.classList.add("correct");
             key.classList.add("correct");
